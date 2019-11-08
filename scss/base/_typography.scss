@@ -1,0 +1,29 @@
+.heading {
+
+  &-fancy {
+    font-family: 'Mistuki';
+    font-size: 6.5rem;
+    font-weight: 100;
+    line-height: 110%;
+  }
+
+  &-plain {
+    font-size: 3rem;
+    font-weight: 200;
+  }
+}
+
+.doordash-link {
+
+  &:link,
+  &:visited {
+    color: #f78989;
+    transition: ease-in-out 250ms;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(#f78989, 13%) ;
+  }
+}
