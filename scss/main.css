@@ -122,13 +122,13 @@ ol {
 
 .heading-fancy {
   font-family: 'Mistuki';
-  font-size: 6.5rem;
+  font-size: 10rem;
   font-weight: 100;
-  line-height: 110%;
+  line-height: 100%;
 }
 
 .heading-plain {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 200;
 }
 
@@ -143,107 +143,16 @@ ol {
   color: #f34b4b;
 }
 
-.u-center-text {
-  text-align: center !important;
-}
-
-.u-margin-center {
-  margin: 0 auto;
-}
-
-.u-heading-primary {
-  font-size: 3.25rem;
-}
-
-@media only screen and (min-width: 62.5em) {
-  .u-heading-primary {
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-primary {
-    font-size: 4.75rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-primary {
-    font-size: 5.5rem;
-  }
-}
-
-.u-heading-secondary {
-  font-size: 2.5rem;
-}
-
-@media only screen and (min-width: 62.5em) {
-  .u-heading-secondary {
-    font-size: 3.25rem;
-  }
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-secondary {
-    font-size: 3.75rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-secondary {
-    font-size: 4.25rem;
-  }
-}
-
-.u-heading-tertiary {
-  font-size: 2.25rem;
-}
-
-@media only screen and (min-width: 62.5em) {
-  .u-heading-tertiary {
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-tertiary {
-    font-size: 2.75rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-tertiary {
-    font-size: 3rem;
-  }
-}
-
-.u-heading-quaternary {
-  font-size: 1.75rem;
-}
-
-@media only screen and (min-width: 81.25em) {
-  .u-heading-quaternary {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-heading-quaternary {
-    font-size: 2.5rem;
-  }
-}
-
-.u-paragraph {
-  font-size: 1.6rem;
-}
-
-@media only screen and (min-width: 237.5em) {
-  .u-paragraph {
-    font-size: 1.8rem;
-  }
+.menu-heading {
+  font-size: 3.5rem;
+  font-weight: 200;
+  border-bottom: 2px solid #42b883;
+  display: inline-block;
+  margin: 3.5rem auto;
 }
 
 .content-box {
+  margin-top: 2.5rem;
   text-align: center;
 }
 
@@ -275,13 +184,89 @@ ol {
 .nav-list-link:link, .nav-list-link:visited {
   color: white;
   font-size: 1.5rem;
-  opacity: 65%;
   -webkit-transition: ease-in-out 250ms;
   -o-transition: ease-in-out 250ms;
   transition: ease-in-out 250ms;
 }
 
 .nav-list-link:hover, .nav-list-link:active, .nav-list-link:focus {
-  opacity: 100%;
+  color: #42b883;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+@media only screen and (min-width: 46.875em) {
+  .menu-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2.5rem;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .menu-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2.5rem;
+    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+
+@media only screen and (min-width: 118.75em) {
+  .menu-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2.5rem;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
+.menu-box {
+  color: #fff;
+  font-weight: 200;
+  padding: 1.25rem;
+}
+
+.menu-box-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .menu-box-heading {
+    font-size: 1.75rem;
+  }
+}
+
+.menu-box-price {
+  color: #42b883;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.menu-box-description, .menu-box-pieces {
+  font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .menu-box-description, .menu-box-pieces {
+    font-size: 1.25rem;
+  }
+}
+
+.menu-box-pieces {
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */

@@ -24,14 +24,15 @@
     &-link:visited {
       color: white;
       font-size: 1.5rem;
-      opacity: 65%;
       transition: ease-in-out 250ms;
     }
 
     &-link:hover,
     &-link:active,
     &-link:focus {
-      opacity: 100%;
+      color: color(pri);
+      font-weight: 600;
+      letter-spacing: 1px;
     }
   }
 }

@@ -1,18 +1,19 @@
+// Styling for page headings
 .heading {
 
   &-fancy {
     font-family: 'Mistuki';
-    font-size: 6.5rem;
+    font-size: 10rem;
     font-weight: 100;
-    line-height: 110%;
+    line-height: 100%;
   }
 
   &-plain {
-    font-size: 3rem;
-    font-weight: 200;
+    @include headingStyleLight;
   }
 }
 
+// Styling for Doordash link
 .doordash-link {
 
   &:link,
@@ -24,6 +25,14 @@
   &:hover,
   &:active,
   &:focus {
-    color: darken(#f78989, 13%) ;
+    color: darken(#f78989, 13%);
   }
+}
+
+.menu-heading {
+  @include headingStyleLight;
+
+  border-bottom: 2px solid color(pri);
+  display: inline-block;
+  margin: 3.5rem auto; 
 }

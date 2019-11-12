@@ -134,6 +134,12 @@
 	grid-template-columns: repeat(auto-fit, minmax($minxmax));
 }
 
+// Heading styles (light)
+@mixin headingStyleLight {
+	font-size: 3.5rem;
+	font-weight: 200;
+}
+
 // For other mixins, check out these links (Ctrl + Click to open in your default browser):
 // https://medium.com/@justinbrazeau/10-useful-sass-mixins-for-automation-833cdee9d69b
 // https://engageinteractive.co.uk/blog/top-10-scss-mixins

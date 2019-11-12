@@ -1,0 +1,51 @@
+.menu {
+  &-grid {
+    @include responsiveGrid(2rem, (25rem, 1fr));
+
+    @include respond(tab-port) {
+      @include responsiveGrid(2.5rem, (25rem, 1fr));
+    }
+
+    @include respond(laptop) {
+      @include responsiveGrid(2.5rem, (35rem, 1fr));
+    }
+
+    @include respond(desktop) {
+      @include responsiveGrid(2.5rem, (30rem, 1fr));
+    }
+  }
+
+  &-box {
+    color: #fff;
+    font-weight: 200;
+    padding: 1.25rem;
+
+    &-heading {
+      font-size: 1.5rem;
+      font-weight: 400;
+
+      @include respond(tab-port) {
+        font-size: 1.75rem;
+      }
+    }
+
+    &-price {
+      color: color(pri);
+      font-weight: 600;
+      margin-left: 1rem;
+    }
+
+    &-description,
+    &-pieces {
+      font-size: 1.25rem;
+
+      @include respond(tab-port) {
+        font-size: 1.25rem;
+      }
+    }
+
+    &-pieces {
+      font-style: italic;
+    }
+  }
+}

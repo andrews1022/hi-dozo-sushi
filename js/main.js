@@ -9,7 +9,7 @@ async function loadContent() {
     // Handle initial page load
     const response = await fetch('pages/index.html');
     const data = await response.text();
-    body.style.backgroundImage = `url('../../img/hero.jpg')`;
+    body.style.backgroundImage = `url('img/hero.jpg')`;
     contentDiv.innerHTML = data;
 
     // Loop through each nav link and add an event listener
@@ -28,11 +28,11 @@ async function loadContent() {
 
           // Change background image as well
           if (page === 'menu') {
-            body.style.backgroundImage = `url('../img/menu.jpg')`;
+            body.style.backgroundImage = `url('img/menu.jpg')`;
           } else if (page === 'contact') {
-            body.style.backgroundImage = `url('../img/contact.jpg')`;
+            body.style.backgroundImage = `url('img/contact.jpg')`;
           } else {
-            body.style.backgroundImage = `url('../img/hero.jpg')`;
+            body.style.backgroundImage = `url('img/hero.jpg')`;
           }
 
           // Insert content for page selected
