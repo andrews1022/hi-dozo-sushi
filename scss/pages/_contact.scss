@@ -1,0 +1,49 @@
+.contact {
+  &-info {
+    @include respond(tab-land){
+      @include responsiveGrid(0.25rem, (5rem, 1fr));
+
+      justify-items: center;
+      text-align: left;
+    }
+
+    &-box {
+      margin: 1.5rem 0;
+    }
+
+    &-text {
+      margin: 0.5rem 0;
+    }
+
+    &-icon {
+      margin-right: 0.75rem;
+    }
+
+    &-postal {
+      margin-left: 1rem;
+    }
+  }
+
+
+}
+
+.contact-info-map iframe {
+  width: 300px;
+  height: 50%;
+  margin: 2rem auto;
+
+  @include respond(mobile-lg) {
+    width: 400px;
+    height: 50%;
+  }
+
+  @include respond(tab-port) {
+    width: 525px;
+    height: 175px;
+  }
+
+  @include respond(laptop) {
+    width: 800px;
+    height: 225px;
+  }
+}

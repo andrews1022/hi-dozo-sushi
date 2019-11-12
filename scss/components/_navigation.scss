@@ -1,29 +1,38 @@
 .nav {
   display: flex;
+  align-items: center;
 
   color: white;
   padding: 2rem 0;
   z-index: 5;
 
   &-header {
-    font-family: 'Mistuki';
-    font-size: 5.25rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
     font-weight: normal;
     margin-right: auto;
+
+    @include respond(tab-port) {
+      font-size: 4.5rem;
+    }
   }
 
   &-list {
     font-family: 'Montserrat', sans-serif;
 
     &-item {
+      font-size: 1.5rem;
       margin-bottom: 0.75rem;
       text-align: right;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
 
     &-link:link,
     &-link:visited {
       color: white;
-      font-size: 1.5rem;
       transition: ease-in-out 250ms;
     }
 

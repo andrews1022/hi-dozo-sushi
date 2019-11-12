@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-// Include Mistuki font
-@font-face {
-	font-family: 'Mistuki';
-	font-style: normal;
-	font-weight: normal;
-	src: url('../../fonts/Mistuki1.ttf');
-}
-
 html {
 	@include htmlBoxReset;
 
@@ -95,4 +87,22 @@ ol {
 	height: 100vh;
 
 	padding: 0 4rem;
+}
+
+.landing-text-box {
+	@include flexCenter;
+	flex-direction: column;
+	margin-top: 25%;
+
+	@include respond(mobile-lg) {
+		margin-top: 20%;
+	}
+
+	@include respond(tab-land) {
+		margin-top: 15%;
+	}
+
+	@include respond(desktop) {
+		margin-top: 10%;
+	}
 }

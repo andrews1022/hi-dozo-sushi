@@ -2,10 +2,16 @@
 .heading {
 
   &-fancy {
-    font-family: 'Mistuki';
-    font-size: 10rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
     font-weight: 100;
-    line-height: 100%;
+    line-height: 115%;
+    margin-top: -4.5rem;
+
+    @include respond(tab-port) {
+      font-size: 8.5rem;
+      margin-bottom: 3rem;
+    }
   }
 
   &-plain {
@@ -35,4 +41,13 @@
   border-bottom: 2px solid color(pri);
   display: inline-block;
   margin: 3.5rem auto; 
+}
+
+.contact-info-text {
+  font-size: 1.5rem;
+
+  &-small-italic{
+    font-size: 1.25rem;
+    font-style: italic;
+  }
 }

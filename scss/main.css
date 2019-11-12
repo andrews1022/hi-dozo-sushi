@@ -23,13 +23,6 @@ $breakpoint argument choices:
 Each em amount is the min-width listed above divided 16
 For example, for tab-port, 768px / 16px = 48em
 */
-@font-face {
-  font-family: 'Mistuki';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../../fonts/Mistuki1.ttf");
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -120,11 +113,54 @@ ol {
   padding: 0 4rem;
 }
 
+.landing-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25%;
+}
+
+@media only screen and (min-width: 34.375em) {
+  .landing-text-box {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+  .landing-text-box {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-width: 118.75em) {
+  .landing-text-box {
+    margin-top: 10%;
+  }
+}
+
 .heading-fancy {
-  font-family: 'Mistuki';
-  font-size: 10rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
   font-weight: 100;
-  line-height: 100%;
+  line-height: 115%;
+  margin-top: -4.5rem;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .heading-fancy {
+    font-size: 8.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .heading-plain {
@@ -151,6 +187,15 @@ ol {
   margin: 3.5rem auto;
 }
 
+.contact-info-text {
+  font-size: 1.5rem;
+}
+
+.contact-info-text-small-italic {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
 .content-box {
   margin-top: 2.5rem;
   text-align: center;
@@ -160,16 +205,25 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   padding: 2rem 0;
   z-index: 5;
 }
 
 .nav-header {
-  font-family: 'Mistuki';
-  font-size: 5.25rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
   font-weight: normal;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .nav-header {
+    font-size: 4.5rem;
+  }
 }
 
 .nav-list {
@@ -177,13 +231,19 @@ ol {
 }
 
 .nav-list-item {
+  font-size: 1.5rem;
   margin-bottom: 0.75rem;
   text-align: right;
 }
 
+@media only screen and (min-width: 46.875em) {
+  .nav-list-item {
+    font-size: 2rem;
+  }
+}
+
 .nav-list-link:link, .nav-list-link:visited {
   color: white;
-  font-size: 1.5rem;
   -webkit-transition: ease-in-out 250ms;
   -o-transition: ease-in-out 250ms;
   transition: ease-in-out 250ms;
@@ -193,6 +253,61 @@ ol {
   color: #42b883;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 62.5em) {
+  .contact-info {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 0.25rem;
+    -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    justify-items: center;
+    text-align: left;
+  }
+}
+
+.contact-info-box {
+  margin: 1.5rem 0;
+}
+
+.contact-info-text {
+  margin: 0.5rem 0;
+}
+
+.contact-info-icon {
+  margin-right: 0.75rem;
+}
+
+.contact-info-postal {
+  margin-left: 1rem;
+}
+
+.contact-info-map iframe {
+  width: 300px;
+  height: 50%;
+  margin: 2rem auto;
+}
+
+@media only screen and (min-width: 34.375em) {
+  .contact-info-map iframe {
+    width: 400px;
+    height: 50%;
+  }
+}
+
+@media only screen and (min-width: 46.875em) {
+  .contact-info-map iframe {
+    width: 525px;
+    height: 175px;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .contact-info-map iframe {
+    width: 800px;
+    height: 225px;
+  }
 }
 
 .menu-grid {
