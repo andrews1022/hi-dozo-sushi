@@ -3,10 +3,10 @@
 html {
 	@include htmlBoxReset;
 
-	color: white;
+	color: $clr-wht;
 	font-family: 'Montserrat', sans-serif;
 	font-size: $fnt-sz-def; // Equivalent to 10px
-	text-transform: lowercase;
+	text-transform: $txt-lwr;
 
 	// Quick/easy font resizing for various screen-widths based off the Media Query Manager (see _mixins.scss)
 	// min-width 576px
@@ -86,7 +86,7 @@ ol {
 	background-size: cover;
 	height: 100vh;
 
-	padding: 0 4rem;
+	padding: 0 $sz-med-1;
 }
 
 .landing-text-box {

@@ -1,46 +1,46 @@
 .menu {
   &-grid {
-    @include responsiveGrid(2rem, (25rem, 1fr));
+    @include responsiveGrid($sz-xsml-1, (25rem, 1fr));
 
     @include respond(tab-port) {
-      @include responsiveGrid(2.5rem, (25rem, 1fr));
+      @include responsiveGrid($sz-xsml-2, (25rem, 1fr));
     }
 
     @include respond(laptop) {
-      @include responsiveGrid(2.5rem, (35rem, 1fr));
+      @include responsiveGrid($sz-xsml-2, (35rem, 1fr));
     }
 
     @include respond(desktop) {
-      @include responsiveGrid(2.5rem, (30rem, 1fr));
+      @include responsiveGrid($sz-xsml-2, (30rem, 1fr));
     }
   }
 
   &-box {
-    color: #fff;
-    font-weight: 200;
-    padding: 1.25rem;
+    color: $clr-wht;
+    font-weight: $fw-x-lt;
+    padding: $sz-tny-2;
 
     &-heading {
-      font-size: 1.5rem;
-      font-weight: 400;
+      font-size: $sz-tny-3;
+      font-weight: $fw-reg;
 
       @include respond(tab-port) {
-        font-size: 1.75rem;
+        font-size: $sz-tny-4;
       }
     }
 
     &-price {
       color: color(pri);
-      font-weight: 600;
-      margin-left: 1rem;
+      font-weight: $fw-semi-bold;
+      margin-left: $sz-tny-1;
     }
 
     &-description,
     &-pieces {
-      font-size: 1.25rem;
+      font-size: $sz-tny-2;
 
       @include respond(tab-port) {
-        font-size: 1.25rem;
+        font-size: $sz-tny-2;
       }
     }
 

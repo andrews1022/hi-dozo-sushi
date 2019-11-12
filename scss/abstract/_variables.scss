@@ -3,28 +3,6 @@
 $clr-wht: #fff;
 $clr-blk: #000;
 
-// ------------------------- GREYS -------------------------
-// Various shades of greys; update/add more if you like!
-$clr-gry-xlt-1: #f4f4f4;
-$clr-gry-xlt-2: #eee;
-$clr-gry-xlt-3: #ddd;
-
-$clr-gry-lt-1: #ccc;
-$clr-gry-lt-2: #bbb;
-$clr-gry-lt-3: #aaa;
-
-$clr-gry-med-1: #999;
-$clr-gry-med-2: #888;
-$clr-gry-med-3: #777;
-
-$clr-gry-drk-1: #666;
-$clr-gry-drk-2: #555;
-
-$clr-gry-xdrk-1: #444;
-$clr-gry-xdrk-2: #333;
-$clr-gry-xdrk-3: #222;
-$clr-gry-xdrk-4: #111;
-
 // ------------------------- IMPORTANT COLORS -------------------------
 $clr-pri: #42b883;
 $clr-pri-lt: lighten($clr-pri, 7.5%);
@@ -32,90 +10,19 @@ $clr-pri-xlt: lighten($clr-pri, 12.5%);
 $clr-pri-drk: darken($clr-pri, 7.5%);
 $clr-pri-xdrk: darken($clr-pri, 12.5%);
 
-$clr-sec: #347474;
-$clr-sec-lt: lighten($clr-sec, 7.5%);
-$clr-sec-xlt: lighten($clr-sec, 12.5%);
-$clr-sec-drk: darken($clr-sec, 7.5%);
-$clr-sec-xdrk: darken($clr-sec, 12.5%);
-
-$clr-tert: #35495e;
-$clr-tert-lt: lighten($clr-tert, 7.5%);
-$clr-tert-xlt: lighten($clr-tert, 12.5%);
-$clr-tert-drk: darken($clr-tert, 7.5%);
-$clr-tert-xdrk: darken($clr-tert, 12.5%);
-
-$clr-quat: #ff7e67;
-$clr-quat-lt: lighten($clr-quat, 7.5%);
-$clr-quat-xlt: lighten($clr-quat, 12.5%);
-$clr-quat-drk: darken($clr-quat, 7.5%);
-$clr-quat-xdrk: darken($clr-quat, 12.5%);
-
-// ------------------------- BORDER-RADIUS -------------------------
-// Intended to be applied to an element on all corners, giving it nice rounded edges
-$br-sml: 3px;
-$br-med: 5px;
-$br-lg: 7px;
-$br-xlg: 10px;
-
 // ------------------------- TEXT DECORATION -------------------------
-// Basic text-decoration values
 $txt-cntr: center;
 $txt-uppr: uppercase;
 $txt-lwr: lowercase;
 $txt-no-dec: none;
 
 // ------------------------- LINE HEIGHT -------------------------
-// Set to 145% by default
-// Best to use anywhere from 125% - 150%
 $lh-def: 1.45;
-$lh-tny: 1.2;
-$lh-sml: 1.25;
-$lh-med: 1.3;
-$lh-lg: 1.35;
-$lh-hg: 1.4;
-$lh-msv: 1.5;
-
-// ------------------------- FONT-FAMILY -------------------------
-// Change as per your project
-$txt-brand: sans-serif; // use this for your company/brand logo (if applicable)
-$txt-main: sans-serif; // use this for the overall site
 
 // ------------------------- LIST DECORATION -------------------------
-// Removes those annoying bullets from lists
 $list-no-dec: none;
 
-// ------------------------- WRAPPER -------------------------
-// Various wrapper sizes (used for width)
-$wrap-tny-1: 50%;
-$wrap-tny-2: 55%;
-
-$wrap-sml-1: 60%;
-$wrap-sml-2: 65%;
-
-$wrap-med-1: 70%;
-$wrap-med-2: 75%;
-
-$wrap-lg-1: 80%;
-$wrap-lg-2: 85%;
-
-$wrap-xlg-1: 90%;
-$wrap-xlg-2: 95%;
-
-$wrap-full: 100%;
-
-// ------------------------- MARGIN CENTER -------------------------
-// Center a block element inside parent block element
-$mar-cntr: 0 auto;
-
-// ------------------------- SECTION PADDING -------------------------
-// Add padding to a wrapper/container based on screen size
-// Update or add/remove as per your project
-$sctn-pad-sm-mbl: 3rem 2rem;
-$sctn-pad-tblt: 3.5rem 6rem;
-$sctn-pad-dsktp: 4rem 10rem;
-
 // ------------------------- FONT-WEIGHT -------------------------
-// Variable names based off of Google Fonts naming style
 $fw-thin: 100;
 $fw-x-lt: 200;
 $fw-lt: 300;
@@ -127,10 +34,7 @@ $fw-x-lt: 800;
 $fw-black: 900;
 
 // ------------------------- FONT SIZES -------------------------
-// Quick and easy font-size increase based on screen size (increment of 3.5
-// Furthermore, precise styling will be needed, but this covers a lot of ground
 $fnt-sz-def: 62.5%;
-
 $fnt-sz-mbl-lg: 66%;
 $fnt-sz-tab-port: 69.5%;
 $fnt-sz-tab-land: 73%;
@@ -140,12 +44,6 @@ $fnt-sz-desktop-lg: 83.5%;
 $fnt-sz-desktop-4k: 87%;
 
 // ------------------------- REM SIZES -------------------------
-// Use these for font-size, margin (overall), padding (overall), etc.)
-// The values are based on the default font-size declared in the _base.scss file
-// Default font size of browsers is 16px, but, we changed that to 10px (62.5%)
-// Now all rems are much easier to calculate
-// For body text, best to not go above 2rem
-// And for line length, try not to go over 90 characters
 $sz-xtny-1: 0.25rem;
 $sz-xtny-2: 0.5rem;
 $sz-xtny-3: 0.75rem;
@@ -195,21 +93,5 @@ $sz-xhg-2: 9.25rem;
 $sz-xhg-3: 9.5rem;
 $sz-xhg-4: 9.75rem;
 
-$sz-msv-1: 10rem;
-$sz-msv-2: 11rem;
-$sz-msv-3: 12rem;
-$sz-msv-4: 13rem;
-$sz-msv-5: 14rem;
-$sz-msv-6: 15rem;
-
 // ------------------------- TRANSITIONS -------------------------
-$transit-standard: all 250ms; // default timing, nice ease-in-out effect
-
-$transit-quick-1: all 200ms;
-$transit-quick-2: all 300ms;
-
-$transit-med-1: all 350ms;
-$transit-med-2: all 400ms;
-
-$transit-slow-1: all 450ms;
-$transit-slow-2: all 500ms;
+$transit-standard: all 250ms; 

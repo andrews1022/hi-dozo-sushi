@@ -26,7 +26,7 @@ For example, for tab-port, 768px / 16px = 48em
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
   text-transform: lowercase;
@@ -170,9 +170,9 @@ ol {
 
 .doordash-link:link, .doordash-link:visited {
   color: #f78989;
-  -webkit-transition: ease-in-out 250ms;
-  -o-transition: ease-in-out 250ms;
-  transition: ease-in-out 250ms;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
 }
 
 .doordash-link:hover, .doordash-link:active, .doordash-link:focus {
@@ -208,7 +208,7 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: #fff;
   padding: 2rem 0;
   z-index: 5;
 }
@@ -216,7 +216,7 @@ ol {
 .nav-header {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
-  font-weight: normal;
+  font-weight: 400;
   margin-right: auto;
 }
 
@@ -243,10 +243,10 @@ ol {
 }
 
 .nav-list-link:link, .nav-list-link:visited {
-  color: white;
-  -webkit-transition: ease-in-out 250ms;
-  -o-transition: ease-in-out 250ms;
-  transition: ease-in-out 250ms;
+  color: #fff;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
 }
 
 .nav-list-link:hover, .nav-list-link:active, .nav-list-link:focus {
@@ -322,7 +322,7 @@ ol {
   .menu-grid {
     display: -ms-grid;
     display: grid;
-    grid-gap: 2.5rem;
+    grid-gap: 2.25rem;
     -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
@@ -332,7 +332,7 @@ ol {
   .menu-grid {
     display: -ms-grid;
     display: grid;
-    grid-gap: 2.5rem;
+    grid-gap: 2.25rem;
     -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
@@ -342,7 +342,7 @@ ol {
   .menu-grid {
     display: -ms-grid;
     display: grid;
-    grid-gap: 2.5rem;
+    grid-gap: 2.25rem;
     -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
@@ -350,7 +350,7 @@ ol {
 
 .menu-box {
   color: #fff;
-  font-weight: 200;
+  font-weight: 800;
   padding: 1.25rem;
 }
 
