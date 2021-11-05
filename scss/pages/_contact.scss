@@ -1,47 +1,47 @@
 .contact {
-  &-info {
-    @include respond(tab-land){
-      @include responsiveGrid($sz-xtny-1, ($sz-lg-1, 1fr));
+	&-info {
+		@include respond(tab-land) {
+			@include responsiveGrid($sz-xtny-1, ($sz-lg-1, 1fr));
 
-      justify-items: center;
-      text-align: left;
-    }
+			justify-items: center;
+			text-align: left;
+		}
 
-    &-box {
-      margin: $sz-tny-3 0;
-    }
+		&-box {
+			margin: $sz-tny-3 0;
+		}
 
-    &-text {
-      margin: $sz-xtny-2 0;
-    }
+		&-text {
+			margin: $sz-xtny-2 0;
+		}
 
-    &-icon {
-      margin-right: $sz-xtny-3;
-    }
+		&-icon {
+			margin-right: $sz-xtny-3;
+		}
 
-    &-postal {
-      margin-left: $sz-tny-1;
-    }
-  }
+		&-postal {
+			margin-left: $sz-tny-1;
+		}
+	}
 }
 
 .contact-info-map iframe {
-  width: 300px;
-  height: 50%;
-  margin: 2rem auto;
+	width: 300px;
+	height: 50%;
+	margin: 2rem auto;
 
-  @include respond(mobile-lg) {
-    width: 400px;
-    height: 50%;
-  }
+	@include respond(mobile-lg) {
+		width: 400px;
+		height: 50%;
+	}
 
-  @include respond(tab-port) {
-    width: 525px;
-    height: 175px;
-  }
+	@include respond(tab-port) {
+		width: 525px;
+		height: 175px;
+	}
 
-  @include respond(laptop) {
-    width: 800px;
-    height: 225px;
-  }
+	@include respond(laptop) {
+		width: 800px;
+		height: 225px;
+	}
 }

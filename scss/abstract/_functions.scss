@@ -1,54 +1,52 @@
-// ----- COLORS MAP -----
+// colors map
 $colors: (
-	pri: #42b883,		// primary color
-	sec: #347474,		// secondary color
-	tert: #35495e,	// tertiary color
-	quat: #ff7e67		// quatenary color
+	pri: #42b883,
+	sec: #347474,
+	tert: #35495e,
+	quat: #ff7e67
 );
 
-// Call this function
+// call this function
 @function color($color-name) {
 	@return map-get($colors, $color-name);
 }
 
-
-// ----- SIZES MAP -----
+// sizes map
 $sizes: (
-	x-tny: 0.5rem,	// extra-tiny
-	tny: 1rem,			// tiny
-	x-sml: 2rem,		// extra-small
-	sml: 3rem,			// small
-	med: 4rem,			// medium
-	lg: 5rem,				// large
-	x-lg: 6rem,			// extra-large
-	xx-lg: 7rem,		// extra-extra-large
-	hg: 8rem,				// huge
-	x-hg: 9rem,			// extra-huge
-	msv: 10rem			// massive
+	x-tny: 0.5rem,
+	tny: 1rem,
+	x-sml: 2rem,
+	sml: 3rem,
+	med: 4rem,
+	lg: 5rem,
+	x-lg: 6rem,
+	xx-lg: 7rem,
+	hg: 8rem,
+	x-hg: 9rem,
+	msv: 10rem
 );
 
-// Call the function
+// call this function
 @function size($size) {
 	@return map-get($sizes, $size);
 }
 
-
-// ----- WRAPPER MAP -----
+// wrapper map
 $wrappers: (
-	x-tny: 50%,		// extra-tiny
-	tny: 55%,			// tiny
-	x-sml: 60%,		// extra-small
-	sml: 65%,			// small
-	med: 70%,			// medium
-	lg: 75%,			// large
-	x-lg: 80%,		// extra-large
-	xx-lg: 85%,		// extra-extra-large
-	hg: 90%,			// huge
-	x-hg: 95%,		// extra-huge
-	full: 100%		// massive
+	x-tny: 50%,
+	tny: 55%,
+	x-sml: 60%,
+	sml: 65%,
+	med: 70%,
+	lg: 75%,
+	x-lg: 80%,
+	xx-lg: 85%,
+	hg: 90%,
+	x-hg: 95%,
+	full: 100%
 );
 
-// Call the function
+// call this function
 @function wrapper($wrapper) {
 	@return map-get($wrappers, $wrapper);
 }

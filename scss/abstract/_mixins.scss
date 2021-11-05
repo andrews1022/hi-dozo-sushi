@@ -1,48 +1,53 @@
-// Responsive images reset
+// responsive images reset
 @mixin responsiveImages {
 	display: block;
 	height: auto;
 	max-width: 100%;
 }
 
-// HTML selector border box reset
+// html selector border box reset
 @mixin htmlBoxReset {
 	box-sizing: border-box;
 }
 
-// Universal selector border box reset
+// universal selector border box reset
 @mixin universalBoxReset {
 	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
 }
 
-// Body selector default font stylings
+// body selector default font stylings
 @mixin defaultFontStyles {
 	font-weight: $fw-reg;
 	line-height: $lh-def;
 }
 
-// Horizontally and vertically center your flexbox container
+// horizontally and vertically center your flexbox container
 @mixin flexCenter {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-// Customizeable Responsive Image/Content Block Grid
-@mixin responsiveGrid($gap: 0.75rem, $minxmax: (30rem, 1fr)) {
+// customizeable Responsive Image/Content Block Grid
+@mixin responsiveGrid(
+	$gap: 0.75rem,
+	$minxmax: (
+		30rem,
+		1fr
+	)
+) {
 	display: grid;
 	grid-gap: $gap;
 	grid-template-columns: repeat(auto-fit, minmax($minxmax));
 }
 
-// Heading styles (light)
+// heading styles (light)
 @mixin headingStyleLight {
 	font-size: 3.5rem;
 	font-weight: 200;
 }
-
 
 /* MEDIA QUERY MANAGER
 
@@ -71,7 +76,6 @@ For example, for tab-port, 768px / 16px = 48em
 */
 
 @mixin respond($breakpoint) {
-
 	@if $breakpoint==mobile-lg {
 		@media only screen and (min-width: 34.375em) {
 			@content;

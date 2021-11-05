@@ -1,47 +1,47 @@
 .nav {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 
-  color: $clr-wht;
-  padding: $sz-xsml-1 0;
-  z-index: 5;
+	color: $clr-wht;
+	padding: $sz-xsml-1 0;
+	z-index: 5;
 
-  &-header {
-    font-family: 'Playfair Display', serif;
-    font-size: $sz-sml-3;
-    font-weight: $fw-reg;
-    margin-right: auto;
+	&-header {
+		font-family: 'Playfair Display', serif;
+		font-size: $sz-sml-3;
+		font-weight: $fw-reg;
+		margin-right: auto;
 
-    @include respond(tab-port) {
-      font-size: $sz-med-3;
-    }
-  }
+		@include respond(tab-port) {
+			font-size: $sz-med-3;
+		}
+	}
 
-  &-list {
-    font-family: 'Montserrat', sans-serif;
+	&-list {
+		font-family: 'Montserrat', sans-serif;
 
-    &-item {
-      font-size: $sz-tny-3;
-      margin-bottom: $sz-xtny-3;
-      text-align: right;
+		&-item {
+			font-size: $sz-tny-3;
+			margin-bottom: $sz-xtny-3;
+			text-align: right;
 
-      @include respond(tab-port) {
-        font-size: $sz-xsml-1;
-      }
-    }
+			@include respond(tab-port) {
+				font-size: $sz-xsml-1;
+			}
+		}
 
-    &-link:link,
-    &-link:visited {
-      color: $clr-wht;
-      transition: $transit-standard;
-    }
+		&-link:link,
+		&-link:visited {
+			color: $clr-wht;
+			transition: $transit-standard;
+		}
 
-    &-link:hover,
-    &-link:active,
-    &-link:focus {
-      color: color(pri);
-      font-weight: $fw-semi-bold;
-      letter-spacing: 1px;
-    }
-  }
+		&-link:hover,
+		&-link:active,
+		&-link:focus {
+			color: color(pri);
+			font-weight: $fw-semi-bold;
+			letter-spacing: 1px;
+		}
+	}
 }

@@ -1,53 +1,51 @@
 // Styling for page headings
 .heading {
+	&-fancy {
+		font-family: 'Playfair Display', serif;
+		font-size: $sz-xlg-1;
+		font-weight: $fw-thin;
+		line-height: 115%;
+		margin-top: -4.5rem;
 
-  &-fancy {
-    font-family: 'Playfair Display', serif;
-    font-size: $sz-xlg-1;
-    font-weight: $fw-thin;
-    line-height: 115%;
-    margin-top: -4.5rem;
+		@include respond(tab-port) {
+			font-size: $sz-hg-3;
+			margin-bottom: $sz-sml-1;
+		}
+	}
 
-    @include respond(tab-port) {
-      font-size: $sz-hg-3;
-      margin-bottom: $sz-sml-1;
-    }
-  }
-
-  &-plain {
-    @include headingStyleLight;
-  }
+	&-plain {
+		@include headingStyleLight;
+	}
 }
 
 // Styling for Doordash link
 .doordash-link {
+	&:link,
+	&:visited {
+		color: #f78989;
+		transition: $transit-standard;
+	}
 
-  &:link,
-  &:visited {
-    color: #f78989;
-    transition: $transit-standard;
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: darken(#f78989, 13%);
-  }
+	&:hover,
+	&:active,
+	&:focus {
+		color: darken(#f78989, 13%);
+	}
 }
 
 .menu-heading {
-  @include headingStyleLight;
+	@include headingStyleLight;
 
-  border-bottom: 2px solid color(pri);
-  display: inline-block;
-  margin: $sz-sml-3 auto; 
+	border-bottom: 2px solid color(pri);
+	display: inline-block;
+	margin: $sz-sml-3 auto;
 }
 
 .contact-info-text {
-  font-size: $sz-tny-3;
+	font-size: $sz-tny-3;
 
-  &-small-italic{
-    font-size: $sz-tny-2;
-    font-style: italic;
-  }
+	&-small-italic {
+		font-size: $sz-tny-2;
+		font-style: italic;
+	}
 }

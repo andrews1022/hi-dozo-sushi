@@ -24,8 +24,7 @@ Each em amount is the min-width listed above divided 16
 For example, for tab-port, 768px / 16px = 48em
 */
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
@@ -77,8 +76,7 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -114,19 +112,10 @@ ol {
 }
 
 .landing-text-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 25%;
 }
 
@@ -170,8 +159,6 @@ ol {
 
 .doordash-link:link, .doordash-link:visited {
   color: #f78989;
-  -webkit-transition: all 250ms;
-  -o-transition: all 250ms;
   transition: all 250ms;
 }
 
@@ -202,12 +189,8 @@ ol {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #fff;
   padding: 2rem 0;
   z-index: 5;
@@ -244,8 +227,6 @@ ol {
 
 .nav-list-link:link, .nav-list-link:visited {
   color: #fff;
-  -webkit-transition: all 250ms;
-  -o-transition: all 250ms;
   transition: all 250ms;
 }
 
@@ -257,11 +238,9 @@ ol {
 
 @media only screen and (min-width: 62.5em) {
   .contact-info {
-    display: -ms-grid;
     display: grid;
     grid-gap: 0.25rem;
-    -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     justify-items: center;
     text-align: left;
   }
@@ -311,40 +290,32 @@ ol {
 }
 
 .menu-grid {
-  display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 @media only screen and (min-width: 46.875em) {
   .menu-grid {
-    display: -ms-grid;
     display: grid;
     grid-gap: 2.25rem;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
 }
 
 @media only screen and (min-width: 81.25em) {
   .menu-grid {
-    display: -ms-grid;
     display: grid;
     grid-gap: 2.25rem;
-    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 
 @media only screen and (min-width: 118.75em) {
   .menu-grid {
-    display: -ms-grid;
     display: grid;
     grid-gap: 2.25rem;
-    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 }
 

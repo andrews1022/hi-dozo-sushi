@@ -1,51 +1,51 @@
 .menu {
-  &-grid {
-    @include responsiveGrid($sz-xsml-1, (25rem, 1fr));
+	&-grid {
+		@include responsiveGrid($sz-xsml-1, (25rem, 1fr));
 
-    @include respond(tab-port) {
-      @include responsiveGrid($sz-xsml-2, (25rem, 1fr));
-    }
+		@include respond(tab-port) {
+			@include responsiveGrid($sz-xsml-2, (25rem, 1fr));
+		}
 
-    @include respond(laptop) {
-      @include responsiveGrid($sz-xsml-2, (35rem, 1fr));
-    }
+		@include respond(laptop) {
+			@include responsiveGrid($sz-xsml-2, (35rem, 1fr));
+		}
 
-    @include respond(desktop) {
-      @include responsiveGrid($sz-xsml-2, (30rem, 1fr));
-    }
-  }
+		@include respond(desktop) {
+			@include responsiveGrid($sz-xsml-2, (30rem, 1fr));
+		}
+	}
 
-  &-box {
-    color: $clr-wht;
-    font-weight: $fw-x-lt;
-    padding: $sz-tny-2;
+	&-box {
+		color: $clr-wht;
+		font-weight: $fw-x-lt;
+		padding: $sz-tny-2;
 
-    &-heading {
-      font-size: $sz-tny-3;
-      font-weight: $fw-reg;
+		&-heading {
+			font-size: $sz-tny-3;
+			font-weight: $fw-reg;
 
-      @include respond(tab-port) {
-        font-size: $sz-tny-4;
-      }
-    }
+			@include respond(tab-port) {
+				font-size: $sz-tny-4;
+			}
+		}
 
-    &-price {
-      color: color(pri);
-      font-weight: $fw-semi-bold;
-      margin-left: $sz-tny-1;
-    }
+		&-price {
+			color: color(pri);
+			font-weight: $fw-semi-bold;
+			margin-left: $sz-tny-1;
+		}
 
-    &-description,
-    &-pieces {
-      font-size: $sz-tny-2;
+		&-description,
+		&-pieces {
+			font-size: $sz-tny-2;
 
-      @include respond(tab-port) {
-        font-size: $sz-tny-2;
-      }
-    }
+			@include respond(tab-port) {
+				font-size: $sz-tny-2;
+			}
+		}
 
-    &-pieces {
-      font-style: italic;
-    }
-  }
+		&-pieces {
+			font-style: italic;
+		}
+	}
 }

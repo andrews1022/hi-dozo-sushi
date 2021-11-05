@@ -1,16 +1,16 @@
 // Abstract Folder Imports
-@import "abstract/functions";
-@import "abstract/mixins";
-@import "abstract/variables";
+@import 'abstract/functions';
+@import 'abstract/mixins';
+@import 'abstract/variables';
 
 // Base Folder Imports
-@import "base/base";
-@import "base/typography";
+@import 'base/base';
+@import 'base/typography';
 
 // Components Folder Imports
-@import "components/content-box";
-@import "components/navigation";
+@import 'components/content-box';
+@import 'components/navigation';
 
 // Pages Folder Imports
-@import "pages/contact";
-@import "pages/menu";
+@import 'pages/contact';
+@import 'pages/menu';
